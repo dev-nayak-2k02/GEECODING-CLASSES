@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styles from './main.module.css'
 const main = () => {
+    const[color, setColor] = useState('')
   return (
     <div>
-        <button>
+        <div className={styles.colorBox}>
+
+        </div>
+        <button onClick={handleClick}>
             click to change color
         </button>
     </div>

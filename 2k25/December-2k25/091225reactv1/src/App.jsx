@@ -1,10 +1,11 @@
 
 import React from 'react'
+import Link from './components/Navigation/Link'
 
 const App = () => {
   return (
     <div>
-      
+      <Link />
     </div>
   )
 }
