@@ -4,9 +4,9 @@ const Routing = () => {
   return (
     <div>
         <BrowserRouter>
-            <Routes
-                
-            ></Routes>
+            <Routes>
+              
+            </Routes>
         </BrowserRouter>
     </div>
   )
