@@ -1,17 +1,19 @@
-import React, { useState } from 'react'
-import styles from './main.module.css'
+import React, { useState } from "react";
+import styles from "./main.module.css";
 const main = () => {
-    const[color, setColor] = useState('')
+  const [color, setColor] = useState("lightGray");
+  const changeColor = () => {
+    setColor(color === "lightgray" ? "skyblue" : "lightgray");
+  };
   return (
-    <div>
-        <div className={styles.colorBox}>
+    <div className={styles.container}>
+      <div className={styles.box} style={{ backgroundColor: color }}></div>
 
-        </div>
-        <button onClick={handleClick}>
-            click to change color
-        </button>
+      <button onClick={changeColor} className={styles.btn}>
+        Change Color
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default main
+export default main;
