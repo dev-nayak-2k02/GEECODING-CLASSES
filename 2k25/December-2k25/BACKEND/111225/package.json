@@ -1,0 +1,14 @@
+{
+  "name": "111225",
+  "version": "1.0.0",
+  "description": "server creation",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dev nayak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
