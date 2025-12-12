@@ -2,11 +2,11 @@ const express = require('express')
 const app = express();
 app.use(express.json());
 const PORT = 3000;
+let i = 0;
 app.post("/search", (req,res)=>{
     console.log('server message')
-    let i = 0
     req.body.map((item)=>{
-        console.log(`Student${i+1}: ${item.name}`);
+        console.log(`Student${++i}: ${item.name}`);
     })
     res.send(req.body);
 })
