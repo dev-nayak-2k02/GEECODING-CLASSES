@@ -4,11 +4,10 @@ app.use(express.json());
 const PORT = 3000;
 app.post("/search", (req,res)=>{
     console.log('server message')
+    let i = 0
     req.body.map((item)=>{
-        console.log(item.name)
+        console.log(`Student${i+1}: ${item.name}`);
     })
-    // console.log(req.body);
-    // console.log(req.body);
     res.send(req.body);
 })
 app.listen(PORT, ()=>{
