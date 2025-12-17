@@ -39,6 +39,7 @@ app.get("/search/:id/name/:studName", (req, res) => {
   const student = students.find(
     (s) => s.id === Number(id) && s.name === studName
   );
+  console.log(student)
 
   if (!student) {
     console.error(`❌ No student found with id=${id} and name=${studName}`);
