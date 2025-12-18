@@ -26,13 +26,11 @@
 const express = require("express");
 const app = express();
 const PORT = 8000;
-
 let students = [
   { id: 13, name: "dev" },
   { id: 12, name: "subham" },
   { id: 11, name: "ram" },
 ];
-
 app.get("/search/:id/name/:studName", (req, res) => {
   const { id, studName } = req.params;
 
